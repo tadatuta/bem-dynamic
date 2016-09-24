@@ -56,6 +56,9 @@ app.get('/ping/', function(req, res) {
 });
 
 app.get('/', function(req, res) {
+    // go to API
+    // https://www.npmjs.com/package/got
+
     render(req, res, {
         view: 'index',
         title: 'Main page',
@@ -65,7 +68,37 @@ app.get('/', function(req, res) {
                 url: 'https://site.com',
                 siteName: 'Site name'
             }
-        }
+        },
+        posts: [
+            {
+                message: 'У блока или элемента может быть несколько модификаторов одновременно. У блока или элемента может быть несколько модификаторов одновременно.',
+                service: 'instagram'
+            },
+            {
+                message: 'Ололо.',
+                service: 'twitter'
+            },
+            {
+                message: 'Трололол',
+                service: 'instagram'
+            },
+            {
+                message: 'У блока или элемента может быть несколько модификаторов одновременно.',
+                service: 'instagram'
+            },
+            {
+                message: 'Ололо.',
+                service: 'twitter'
+            },
+            {
+                message: 'Трололол',
+                service: 'instagram'
+            },
+            {
+                message: 'У блока или элемента может быть несколько модификаторов одновременно.',
+                service: 'instagram'
+            }
+        ]
     })
 });
 
