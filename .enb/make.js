@@ -4,6 +4,7 @@ var techs = {
         fileCopy: require('enb/techs/file-copy'),
         borschik: require('enb-borschik/techs/borschik'),
         stylus: require('enb-stylus/techs/stylus'),
+        sharps: require('sharps').enb,
         browserJs: require('enb-js/techs/browser-js'),
         bemtree: require('enb-bemxjst/techs/bemtree'),
         bemhtml: require('enb-bemxjst/techs/bemhtml')
@@ -34,11 +35,20 @@ module.exports = function(config) {
 
             // css
             [techs.stylus, {
-                target: '?.css',
+                target: '?.no-grid.css',
                 sourcemap: false,
                 autoprefixer: {
                     browsers: ['ie >= 10', 'last 2 versions', 'opera 12.1', '> 2%']
                 }
+            }],
+
+            [techs.sharps, {
+                config: {
+                    maxWidth: '1100px',
+                    gutter: '10px',
+                    flex: 'flex'
+                },
+                source: '?.no-grid.css'
             }],
 
             // bemtree

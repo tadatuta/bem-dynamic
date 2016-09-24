@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Myriad Set Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('myriad-set-pro_text.woff2') format('woff2'), url('myriad-set-pro_text.woff') format('woff'), url('myriad-set-pro_text.ttf') format('truetype');
+}
