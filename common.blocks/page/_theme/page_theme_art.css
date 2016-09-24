@@ -1,0 +1,16 @@
+html {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+.page_theme_art {
+    font: 16px 'Myriad Set Pro', Helvetica, Arial, sans-serif;
+    min-height: 100%;
+    margin: 0;
+    color: #999ea3;
+    background: #fff;
+}
+@media only screen and (min-width: 0px) and (max-width: 319px) {
+    .page_theme_art {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,1 @@
+block('heading').content()('SSSR');
