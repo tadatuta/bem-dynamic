@@ -1,5 +1,5 @@
 ({
-    shouldDeps: {
+    shouldDeps: [
         { block: 'i-bem', elem: 'dom' }
-    }
+    ]
 })
