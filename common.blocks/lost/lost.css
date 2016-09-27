@@ -1,4 +1,5 @@
 .lost {
+    box-sizing: border-box;
     zoom: 1;
     max-width: 100%;
     margin-left: auto;
@@ -6,6 +7,16 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+/* TODO: get rid of asterisk */
+.lost,
+.lost *,
+.lost:before,
+.lost:after
+ {
+    box-sizing: border-box;
+}
+
 .lost:before {
     content: '';
     display: table;

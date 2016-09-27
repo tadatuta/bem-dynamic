@@ -1,27 +1,10 @@
 block('header').content()(function() {
     return [
         {
-            elem: 'side',
-            elemMods: { align: 'left' },
-            content: [
-                {
-                    block : 'logo'
-                },
-                {
-                    block : 'form'
-                }
-
-            ]
+            block: 'logo'
         },
         {
-            elem: 'side',
-            elemMods: { align: 'right' },
-            content: [
-
-             /* some block */
-
-            ]
+            elem: 'search-form'
         }
-
     ];
 });

@@ -1,37 +1,13 @@
-.filter {
-    float: right;
-}
-@media screen and (min-width: 0px) and (max-width: 767px) {
-    .filter {
-        float: left;
-    }
-}
-.filter__content {
-    padding-right: 34px;
-}
-@media screen and (min-width: 0px) and (max-width: 767px) {
-    .filter__content {
-        padding: 10px 4px 0;
-    }
-}
-.filter ul {
-    display: block;
-    padding: 0;
-    width: 100%;
-}
-.filter ul li {
-    display: inline-block;
-}
-.filter__item p {
+.toggle__lable {
     display: inline-block;
     line-height: 24px;
     margin: 0 20px 0;
     vertical-align: middle;
-    -webkit-transition: color 0.56s cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 0.56s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter__instagram,
-.filter__twitter {
+
+.toggle_type_instagram,
+.toggle_type_twitter {
     display: inline-block;
     position: relative;
     width: 40px;
@@ -43,8 +19,9 @@
     vertical-align: middle;
     cursor: pointer;
 }
-.filter__instagram::before,
-.filter__twitter::before {
+
+.toggle_type_instagram::before,
+.toggle_type_twitter::before {
     content: '';
     position: absolute;
     top: -4px;
@@ -57,10 +34,12 @@
     -webkit-transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter__instagram:active::before,
-.filter__twitter:active::before {
+
+.toggle_type_instagram:active::before,
+.toggle_type_twitter:active::before {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28), 0 0 0 20px rgba(128, 128, 128, 0.1);
 }
+
 input:checked + .filter__instagram {
     background: #95b8d4;
 }
@@ -81,7 +60,8 @@ input:checked + .filter__twitter::before {
 input:checked + .filter__twitter:active::before {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28), 0 0 0 20px rgba(76, 171, 219, 0.2);
 }
-@media only screen and (min-width: 0px) and (max-width: 479px) {
+
+@media only screen and (max-width: 479px) {
     /* прячем фильтр */
     .filter {
         display: none;

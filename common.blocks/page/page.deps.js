@@ -1,12 +1,10 @@
 ({
-    mustDeps : [
-        { block : 'font', mods : { face : 'myriad-text'} },
-    ],
     shouldDeps: [
         {
-            mods: { view: ['404'], theme: ['art']}
+            mods: { view: ['404'], theme: ['art'] }
         },
+        { block: 'font', mods: { face: 'myriad-text'} },
         'header',
-        'result'
+        'serp'
     ]
 })

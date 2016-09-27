@@ -1,8 +1,11 @@
 ({
     shouldDeps: [
+        { elem: 'text' },
+        'service',
         {
-            elems: ['text']
+            block: 'link',
+            mods: { theme: 'islands' }
         },
-        'user', 'service'
+        'image'
     ]
 })

@@ -18,3 +18,28 @@
     width: 100%;
     border-radius: 3px;
 }
+
+
+.user__name {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000;
+}
+.user__name:hover {
+    text-decoration: underline;
+    color: #038543;
+}
+.user__post-time {
+    font-size: 14px;
+    display: inline-block;
+    color: #8899a6;
+}
+.user__icon {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}

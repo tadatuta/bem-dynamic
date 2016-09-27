@@ -1,4 +1,9 @@
 block('scroll-btn')(
 	tag()('a'),
-	js()(true)
+	js()(true),
+    content()(function() {
+        return {
+            elem: 'arrow'
+        };
+    })
 );

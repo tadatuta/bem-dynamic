@@ -1,3 +1,5 @@
 ({
-    shouldDeps: ['arrow']
+    shouldDeps: {
+        { block: 'i-bem', elem: 'dom' }
+    }
 })

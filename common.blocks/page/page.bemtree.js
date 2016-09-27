@@ -4,7 +4,7 @@ block('page').content()(function() {
             block : 'header'
         },
         {
-            block : 'result'
+            block : 'serp'
         }
     ];
 });
